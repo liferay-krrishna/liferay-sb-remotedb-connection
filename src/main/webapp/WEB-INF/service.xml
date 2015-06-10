@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.liferay.krrishna.sb.remote">
+	<author>Liferay</author>
+	<namespace>SAMPLE</namespace>
+
+<entity name="MyCustomCountry" table="country" local-service="true"
+        remote-service="true" data-source="eportalDB">
+
+        <!-- PK fields -->
+        <column name="countryId" type="String" primary="true" />
+        <column name="name" type="String" />
+        <column name="a2" type="String" />
+        <column name="a3" type="String" />
+        <column name="number_" type="String" />
+        <column name="idd_" type="String" />
+        <column name="zipRequired" type="int" />
+        <column name="active_" type="int" />
+
+    </entity>
+ 
+	
+</service-builder>
